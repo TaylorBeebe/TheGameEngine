@@ -27,9 +27,15 @@
     <ClInclude Include="src\TheGameEngine\Entry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\TheGameEngine\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\TheGameEngine\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TheGameEngine\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

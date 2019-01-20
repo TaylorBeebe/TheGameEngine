@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\TheGameEngine\Log.h" />
     <ClInclude Include="src\TheGameEngine.h" />
     <ClInclude Include="src\TheGameEngine\Application.h" />
     <ClInclude Include="src\TheGameEngine\Core.h" />
     <ClInclude Include="src\TheGameEngine\Entry.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\TheGameEngine\Log.cpp" />
     <ClCompile Include="src\TheGameEngine\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,8 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>PLATFORM_WINDOWS;BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)TheGameEngine\3rdParty\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -79,8 +80,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>PLATFORM_WINDOWS;BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)TheGameEngine\3rdParty\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
